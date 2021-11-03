@@ -1,11 +1,14 @@
 package com.turntabl;
 
+import com.turntabl.Enums.HasYear;
 import com.turntabl.Enums.Year;
 import com.turntabl.Interfaces.Nameable;
 
 import java.util.List;
+import java.util.stream.DoubleStream;
+import java.util.stream.Stream;
 
-public class Student implements Nameable {
+public class Student implements Nameable, HasYear {
     private String name;
     private String studentID;
     private Year year;
@@ -49,6 +52,10 @@ public class Student implements Nameable {
 
     public void setYear(Year year) {
         this.year = year;
+    }
+
+    public Stream<Double> getGradesStream() {
+        return grades.stream();
     }
 
     @Override

@@ -18,7 +18,7 @@ public class NaughtyStudentTest {
         lecture.enter(student);
         lecture.enter(naughty);
 
-        assertEquals(lecture.getHighestAverageGrade(), naughty.getAverageGrade());
+        assertEquals(naughty.getAverageGrade(), lecture.getHighestAverageGrade());
     }
 
 }

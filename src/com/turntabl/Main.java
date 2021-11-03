@@ -3,7 +3,10 @@ package com.turntabl;
 import com.turntabl.Enums.Year;
 import com.turntabl.Generics.Bag;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import static com.turntabl.Enums.Year.*;
 
 public class Main {
 
@@ -37,14 +40,14 @@ public class Main {
 //
 //        List<Student> fourthYearWithVowel = students.stream()
 //                .filter(s -> s.getYear() == FOURTH)
-//                .filter(s -> s.getName().toLowerCase().startsWith("a")) // use the vowel here
+//                .filter(s -> vowels.contains(s.getName().charAt(0))) // use the vowel here
 //                .collect(Collectors.toList());
 //        Course physics = new Course( fourthYearWithVowel, FOURTH);
 //
 //        System.out.println(physics.getStudentsTakingCourse());
-
-
-
+//
+//
+//
 
 
 
